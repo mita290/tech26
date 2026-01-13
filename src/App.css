@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+#textblock {
+  /* background-color: #210002; */
+  background-color: #311719;
+  height: 400vh;
+}
+
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-title {
+  color: #ffaf1b;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#textblock-subtitle, a {
+  color: #ffaf1b;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .contact-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 25%;
+} */
+
+#textblock-content {
+  color: #ffaf1b;
+  font-size: 20px;
+}
+
+#textblock-devsense {
+  text-decoration: none;
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#artback {
+    background-image: url('./images/background.png');
+}
+
+#mountain {
+    background-image: url('./images/mountains.png');
+}
+
+#logoland {
+    background-image: url('./images/logo_land.png');
+}
+
+#jungle1 {
+  background-image: url(./images/jungle1.png);
+}
+
+#jungle2 {
+  background-image: url(./images/jungle2.png);
+}
+
+#jungle3 {
+  background-image: url(./images/jungle3.png);
+}
+
+#jungle4 {
+  background-image: url(./images/jungle4.png);
+}
+
+#jungle5 {
+  background-image: url(./images/jungle5.png);
+}
+
+#manonmountain {
+  background-image: url(./images/man_on_mountain.png);
+  opacity: 0.7;
+}
+
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 700px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Each direct child of carousel takes full width */
+.carousel > * {
+  flex: 0 0 100%;
+}
+
+/* Card group */
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px; /* gap between last and first card */
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+
+/* Pause animation on hover */
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+/* Individual cards */
+.card {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+  color: white;
+
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
+}
+
+/* Card colors */
+.card:nth-child(1) {
+  background: #53505e;
+}
+
+.card:nth-child(2) {
+  background: #53505e;
+}
+
+.card:nth-child(3) {
+  background: #53505e;
+}
+
+/* Animation */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Events Layout */
+
+.events-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Base Tile */
+
+.event-tile {
+    width: 240px;
+    min-height: 140px;
+    background: rgba(101, 67, 33, 0.7);
+    border-radius: 14px;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.35s ease;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-tile h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Hover effect */
+
+.event-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.15);
+}
+
+/* Expanded State */
+
+.event-tile.expanded {
+    width: 300px;
+    min-height: 260px;
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+/* Extra Content */
+
+.event-extra {
+    margin-top: 15px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.event-extra p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Register Button */
+
+.register-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background: #ff2a2a;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

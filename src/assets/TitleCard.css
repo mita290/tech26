@@ -1,0 +1,104 @@
+body {
+  background: black;
+}
+
+.centered {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.stranger-things {
+  position: relative;
+}
+
+.stranger-things hr {
+  border: none;
+  background-color: #6c2a28;
+  height: 3px;
+}
+
+.stranger-things hr.bottom-line {
+  margin-top: 30px;
+  margin-bottom: -30px;
+  width: 12%;
+  position: absolute;
+}
+
+.stranger-things hr.bottom-line.right {
+  right: 0;
+}
+
+.eighties {
+  color: #000000; 
+  font-family: "Eighties Horror", serif;
+  line-height: 1em;
+  letter-spacing: 3px;
+
+  text-shadow:
+    0 0 6px rgba(200, 25, 20, 0.6),
+    0 0 14px rgba(200, 25, 20, 0.5),
+    0 0 28px rgba(200, 25, 20, 0.4);
+}
+
+.eighties.line1 {
+  font-size: 70pt;
+  letter-spacing: 4px;
+  margin-left: 0.3em;
+}
+
+.eighties.line2 {
+  font-size: 50pt;
+}
+
+.eighties.line1:first-letter,
+.eighties.line1 .last-letter {
+  font-size: 1.2em;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+
+.stranger-things hr {
+  border: none;
+  height: 5px; /* thicker line */
+  background: linear-gradient(
+    to right,
+    #631212,
+    #171212,
+    #631212
+  );
+
+  box-shadow:
+    0 0 6px rgba(255, 50, 50, 0.9),
+    0 0 14px rgba(255, 50, 50, 0.7),
+    0 0 22px rgba(255, 50, 50, 0.5);
+}
+
+.stranger-things hr.bottom-line {
+  height: 4px;
+  width: 40%; /* slightly wider for balance */
+  margin-top: 32px;
+  margin-bottom: -32px;
+  position: absolute;
+}
+
+
+.eighties {
+  color: #1d1c1c;
+  font-family: "Eighties Horror", serif;
+  line-height: 1em;
+  letter-spacing: 3px;
+
+  text-shadow:
+    0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 6px rgba(255, 60, 60, 0.6),
+    0 0 14px rgba(255, 60, 60, 0.4);
+}
+
+
+body {
+  background: radial-gradient(circle at center, #111 0%, #000 70%);
+}
