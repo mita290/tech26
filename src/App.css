@@ -294,4 +294,8 @@ a {
     height: 10vh;
     background-size: contain;
   }
+  #textblock-container {
+    width: 85%;
+    overflow-y: scroll;
+  }
 }
