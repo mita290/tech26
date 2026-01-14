@@ -291,6 +291,6 @@ a {
 
 @media(max-width: 400px) {
   .bg {
-    height: 50vh;
+    height: 10vh;
   }
 }
