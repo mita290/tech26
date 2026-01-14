@@ -83,7 +83,7 @@ body {
   overflow-y: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #textblock-container {
     width: 85%;
     overflow-y: scroll;
