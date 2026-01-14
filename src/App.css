@@ -60,7 +60,7 @@ body {
   overflow-y: hidden;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   #textblock-container {
     width: 85%;
     overflow-y: scroll;
@@ -289,13 +289,9 @@ a {
     }
 }
 
-@media(max-width: 400px) {
-  .bg {
-    height: 10vh;
-    background-size: contain;
-  }
+/* @media(max-width: 400px) {
   #textblock-container {
     width: 85%;
     overflow-y: scroll;
   }
-}
+} */
