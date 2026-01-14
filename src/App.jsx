@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './App.css';
 import TextBlock from './components/TextBlock';
@@ -9,7 +7,7 @@ import video from './videos/bg.mp4';
 function App() {
   return (
     <div className="App">
-      <Parallax pages={4.25} style={{ top: '0', left: '0' }} class="animation">
+      <Parallax pages={4.25} style={{ top: '0', left: '0'}} class="animation">
         <ParallaxLayer offset={0} speed={0.25}>
           <div class="animation_layer parallax" id="artback">
             <video
@@ -23,10 +21,10 @@ function App() {
             </video>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.35}>
+        <ParallaxLayer offset={0} speed={0.40}>
           <TitleCard />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.25}>
+        <ParallaxLayer offset={0.9999} speed={0.30}>
           <TextBlock />
         </ParallaxLayer>
       </Parallax>
