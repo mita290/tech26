@@ -10,25 +10,25 @@ function TextBlock() {
     const events = [
         {
             id: 1,
-            title: "Paper Presentation",
+            title: "Upside Verse!",
             description:
-                "Present your research ideas, innovative concepts, or technical solutions in front of an expert panel.",
+                "Present your research ideas, innovative concepts, or technical solutions in front of an expert panel! (1-3 members)",
             contact: "Kavi Priya - 7550204020",    
             formLink: "https://forms.gle/7TU9sSHcAzaQQ4MF6"
         },
         {
             id: 2,
-            title: "Coding Contest",
+            title: "Glitch Hunt!",
             description:
-                "Test your programming skills through challenging problem statements and real-world scenarios.",
+                "Test your programming skills through challenging problems! (1-3 members)",
             contact: "Harini - 7010636768", 
             formLink: "https://forms.gle/7TU9sSHcAzaQQ4MF6"
         },
         {
             id: 3,
-            title: "Solve The Case",
+            title: "Mind-Flayer's Mystery!",
             description:
-                "Analyze real-world technical cases, debug issues, and propose effective solutions.",
+                "Solve complex puzzles and advance through levels! (1-3)",
             contact: "Mercy Catherine - 8870622023", 
             formLink: "https://forms.gle/7TU9sSHcAzaQQ4MF6"
         }
@@ -36,17 +36,17 @@ function TextBlock() {
     const nonTechEvents = [
         {
             id: 101,
-            title: "IPL Auction",
+            title: "IPL Auction In Hawkins Town!",
             description:
-                "Experience the thrill of building your dream IPL team using strategy, budget management, and smart bidding.",
+                "Experience the thrill of building your dream IPL team using strategy, budget management, and smart bidding. (1-3 members)",
             contact: "Giridharan - 9841698553",
             formLink: "https://forms.gle/65iwtW3Me4wTfZ7M7"
         },
         {
             id: 102,
-            title: "Eleven's Vision",
+            title: "Eleven's Vision!",
             description:
-                "Test your creativity, perception, and observation skills through fun and challenging visual rounds.",
+                "Test your creativity, perception, and observation skills through fun and challenging rounds. (2-3 Members)",
             contact: "Sathyapriya - 9840975961",
             formLink: "https://forms.gle/65iwtW3Me4wTfZ7M7"
         }
@@ -86,7 +86,7 @@ function TextBlock() {
             <div class="bg bg-3">
                 <div id="textblock-container">
                     <h1 id="textblock-title">Events</h1>
-                    <h3 id="textblock-subtitle"><b>Technical Events:</b> <i>Show off you technical skills!</i></h3>
+                    <h3 id="textblock-subtitle"><b>Technical Events:</b> <i>Show off your technical skills!</i></h3>
                     <div className="events-container">
                         {events.map(event => {
                             const isActive = activeEvent?.id === event.id;
