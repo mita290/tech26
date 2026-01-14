@@ -292,5 +292,6 @@ a {
 @media(max-width: 400px) {
   .bg {
     height: 10vh;
+    background-size: contain;
   }
 }
