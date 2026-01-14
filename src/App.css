@@ -1,53 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.33);
+    transform-origin: top left;
+    width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  body::before {
+    content: "Best viewed on desktop";
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff3b3b;
+    font-family: monospace;
+    z-index: 9999;
+  }
+}
+
+
+html, body {
+  width: 1200px;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  color: #0e0d0d;
 }
 #textblock {
-  /* background-color: #210002; */
-  background-color: #311719;
+  background-color: black; 
+  background-attachment: fixed;
   height: 400vh;
+  position: relative; 
+}
+
+.bg {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+
+.bg-1 {
+  background-image: url('./images/red_smoke.jpeg');
+}
+
+.bg-2 {
+  background-image: url('./images/bg2.jpg');
+}
+
+.bg-3 {
+  background-image: url('./images/bg3.jpg');
+}
+
+.bg-4 {
+  background-image: url('./images/bg4.jpg');
+  height: 150vh;
 }
 
 #textblock-container {
   width: 50%;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+  height: 85%;
+  background-color: #e03d10;
+  opacity: 0.8;
 }
 
 #textblock-title {
-  color: #ffaf1b;
+  opacity: 1;
   font-size: 35px;
   font-weight: 600;
 }
 
 #textblock-subtitle, a {
-  color: #ffaf1b;
+  opacity: 1;
   font-size: 25px;
   font-weight: 600;
 }
 
 a {
+  opacity: 1;
   text-decoration: none;
+  color: #0e0d0d;
 }
 
-/* .contact-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 25%;
-} */
 
 #textblock-content {
-  color: #ffaf1b;
+  opacity: 1;   
   font-size: 20px;
-}
-
-#textblock-devsense {
-  text-decoration: none;
-  color: #ffaf1b;
-  font-size: 15px;
-  font-weight: 600;
 }
 
 .animation, .animation_layer {
@@ -72,43 +124,21 @@ a {
 }
 
 #artback {
-    background-image: url('./images/background.png');
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
 }
 
-#mountain {
-    background-image: url('./images/mountains.png');
-}
-
-#logoland {
-    background-image: url('./images/logo_land.png');
-}
-
-#jungle1 {
-  background-image: url(./images/jungle1.png);
-}
-
-#jungle2 {
-  background-image: url(./images/jungle2.png);
-}
-
-#jungle3 {
-  background-image: url(./images/jungle3.png);
-}
-
-#jungle4 {
-  background-image: url(./images/jungle4.png);
-}
-
-#jungle5 {
-  background-image: url(./images/jungle5.png);
-}
-
-#manonmountain {
-  background-image: url(./images/man_on_mountain.png);
-  opacity: 0.7;
+.bg-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(1.5);
 }
 
 .carousel {
+  opacity: 1;
   margin: 0 auto;
   padding: 20px 0;
   max-width: 700px;
@@ -188,15 +218,16 @@ a {
 /* Base Tile */
 
 .event-tile {
+    opacity: 1;
     width: 240px;
     min-height: 140px;
-    background: rgba(101, 67, 33, 0.7);
+    background: rgba(29, 24, 23, 0.7);
     border-radius: 14px;
     padding: 20px;
     cursor: pointer;
     color: white;
     transition: all 0.35s ease;
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,7 +244,7 @@ a {
 
 .event-tile:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 18px rgba(185, 180, 180, 0.15);
 }
 
 /* Expanded State */
@@ -222,7 +253,7 @@ a {
     width: 300px;
     min-height: 260px;
     transform: scale(1.08);
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 30px rgba(226, 222, 222, 0.3);
 }
 
 /* Extra Content */
