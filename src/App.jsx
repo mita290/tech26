@@ -24,7 +24,7 @@ function App() {
         <ParallaxLayer offset={0} speed={0.40}>
           <TitleCard />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.50}>
+        <ParallaxLayer offset={0.999999} speed={0.50}>
           <TextBlock />
         </ParallaxLayer>
       </Parallax>
