@@ -288,3 +288,9 @@ a {
         transform: translateY(0);
     }
 }
+
+@media(max-width: 400px) {
+  .bg {
+    height: 50%;
+  }
+}
