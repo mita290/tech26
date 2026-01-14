@@ -28,7 +28,7 @@ function TextBlock() {
             id: 3,
             title: "Mind-Flayer's Mystery!",
             description:
-                "Solve complex puzzles and advance through levels! (1-3)",
+                "Solve complex puzzles and advance through levels! (1-3 members)",
             contact: "Mercy Catherine - 8870622023", 
             formLink: "https://forms.gle/7TU9sSHcAzaQQ4MF6"
         }

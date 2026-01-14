@@ -1,28 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
 
-
-@media (max-width: 768px) {
-  body {
-    transform: scale(0.33);
-    transform-origin: top left;
-    width: 1200px;
-  }
-}
-
-@media (max-width: 768px) {
-  body::before {
-    content: "Best viewed on desktop";
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ff3b3b;
-    font-family: monospace;
-    z-index: 9999;
-  }
-}
-
-
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -72,10 +49,10 @@ body {
 #textblock-container {
   width: 50%;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 70px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 8rem;
   height: 85%;
   background-color: #e03d10;
   opacity: 0.8;

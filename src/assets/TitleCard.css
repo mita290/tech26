@@ -211,3 +211,9 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .stranger-things {
+    transform: scale(0.40);
+    transform-origin: center center;
+  }
+} 
