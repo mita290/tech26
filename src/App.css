@@ -35,13 +35,14 @@ body {
 #textblock {
   background-color: black; 
   background-attachment: fixed;
-  height: 400vh;
+  height: 420vh;
   position: relative; 
 }
 
 .bg {
   height: 100vh;
   width: 100%;
+  padding: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,11 +60,13 @@ body {
 
 .bg-3 {
   background-image: url('./images/bg3.jpg');
+  height: 120vh;
 }
 
 .bg-4 {
   background-image: url('./images/bg4.jpg');
-  height: 150vh;
+  height: 100vh;
+  padding-bottom: 2rem;
 }
 
 #textblock-container {
@@ -280,6 +283,7 @@ a {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    z-index: 100;
 }
 
 .register-btn:hover {
