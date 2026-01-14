@@ -35,7 +35,7 @@ body {
 #textblock {
   background-color: black; 
   background-attachment: fixed;
-  height: 420vh;
+  height: 450vh;
   position: relative; 
 }
 
@@ -65,7 +65,7 @@ body {
 
 .bg-4 {
   background-image: url('./images/bg4.jpg');
-  height: 100vh;
+  height: 150vh;
   padding-bottom: 2rem;
 }
 
@@ -79,6 +79,15 @@ body {
   height: 85%;
   background-color: #e03d10;
   opacity: 0.8;
+  overflow-x: hidden;   
+  overflow-y: hidden;
+}
+
+@media (max-width: 1200px) {
+  #textblock-container {
+    width: 85%;
+    overflow-y: scroll;
+  }
 }
 
 #textblock-title {

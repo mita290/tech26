@@ -7,7 +7,7 @@ import video from './videos/bg.mp4';
 function App() {
   return (
     <div className="App">
-      <Parallax pages={4} style={{ top: '0', left: '0'}} class="animation">
+      <Parallax pages={4.5} style={{ top: '0', left: '0'}} class="animation">
         <ParallaxLayer offset={0} speed={0.25}>
           <div class="animation_layer parallax" id="artback">
             <video
