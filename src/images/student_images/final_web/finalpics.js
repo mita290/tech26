@@ -8,7 +8,7 @@ import hema from './hema.jpeg';
 import karthi from './karthi.jpeg';
 import kavi from './kavi.jpeg';
 import keerth from './keerth.jpeg';
-import manju3 from './manju3.jpeg';
+import manju3 from './manju3.jpg';
 import mercy from './mercy.jpeg';
 import rama from './rama.jpeg';
 

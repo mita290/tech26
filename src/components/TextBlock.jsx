@@ -132,13 +132,18 @@ function TextBlock() {
                                             <p style={{ whiteSpace: "pre-line"}}>{event.contact}</p>
 
                                             <a
-                                                href={event.formLink}
+                                                href={event.id === 4 ? undefined : event.formLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="register-btn"
-                                                onClick={(e) => e.stopPropagation()}
+                                                className={`register-btn ${event.id === 4 ? "disabled" : ""}`}
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    if (event.id === 4) {
+                                                        e.preventDefault();
+                                                    }
+                                                }}
                                             >
-                                                Register Now
+                                                {event.id === 4 ? "Registrations Closed" : "Register Now"}
                                             </a>
                                         </div>
                                     )}
