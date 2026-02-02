@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import './App.css';
 import TextBlock from './components/TextBlock';
 import TitleCard from './components/TitleCard';
-import video from './videos/bg.mp4';
+import video from './videos/bg2.mp4';
 import theme from './audio/st_theme.mp3';
 
 function App() {
