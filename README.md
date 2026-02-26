@@ -52,6 +52,7 @@ Implement modern UI techniques like parallax and animated typography
 Deploy a production-ready website
 
 # 📂 Project Structure
+```
 /src
   /components
   /assets
@@ -59,6 +60,7 @@ Deploy a production-ready website
   /videos
   App.jsx
   main.jsx
+```
   
 # 🚀 Deployment
 
