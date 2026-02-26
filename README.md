@@ -1,18 +1,87 @@
-# React + Vite
+# 🎬 Department Symposium Event Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An immersive, Stranger Things–themed event registration website built for our department-level symposium.
 
-Currently, two official plugins are available:
+This project was designed to provide a visually engaging and seamless platform for participants to explore events and register online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website: 
+https://your-project-name.vercel.app
 
-## React Compiler
+# 📌 Project Overview
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The Symposium Event Portal was developed as my first real-world production project. The primary objective was to create a highly attractive, responsive, and interactive website where students could register for various technical and non-technical events conducted during the symposium.
 
-Note: This will impact Vite dev & build performances.
+The website focuses heavily on UI/UX design, cinematic aesthetics, and modern frontend techniques to create an engaging digital experience.
 
-## Expanding the ESLint configuration
+# ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎥 Cinematic video background
+
+🔴 Stranger Things–inspired animated title card
+
+🌌 Parallax scrolling effects
+
+🖼️ Interactive image carousel
+
+📱 Fully responsive design
+
+📝 Multi-event registration workflow
+
+⚡ Optimized performance for smooth animations
+
+🌍 Production deployment using Vercel
+
+# 🛠️ Tech Stack
+
+**Frontend:** React, Vite
+
+**Styling:** CSS3, Animations
+
+**Deployment:** Vercel
+
+**Version Control:** Git & GitHub
+
+# 🎯 Objectives
+
+Create an immersive and theme-based web experience
+
+Enable easy participant registration for symposium events
+
+Implement modern UI techniques like parallax and animated typography
+
+Deploy a production-ready website
+
+# 📂 Project Structure
+/src
+  /components
+  /assets
+  /images
+  /videos
+  App.jsx
+  main.jsx
+  
+# 🚀 Deployment
+
+The application was deployed using Vercel:
+
+Connected GitHub repository to Vercel
+
+Configured build settings (Vite)
+
+Deployed production build
+
+Live updates enabled via automatic CI/CD
+
+# 📈 Learning Outcomes
+
+Gained hands-on experience in building a real-world React application
+
+Learned production deployment workflow using Vercel
+
+Improved frontend design skills with animations and advanced UI effects
+
+Understood responsive design and cross-device optimization
+
+# 🙌 Acknowledgment
+
+Developed for the Department Symposium as part of event management and technical coordination.
