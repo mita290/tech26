@@ -5,7 +5,7 @@ An immersive, Stranger Things–themed event registration website built for our 
 This project was designed to provide a visually engaging and seamless platform for participants to explore events and register online.
 
 ## 🌐 Live Website: 
-https://your-project-name.vercel.app
+[https://your-project-name.vercel.app](https://tech26.vercel.app/)
 
 # 📌 Project Overview
 
